@@ -33,6 +33,9 @@
 		92CA18D728AF169E00314DEB /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA18D628AF169E00314DEB /* BaseView.swift */; };
 		92CA18D928AF179B00314DEB /* WriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA18D828AF179B00314DEB /* WriteView.swift */; };
 		92CA18DC28AF2CFD00314DEB /* BlackRadiusTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA18DB28AF2CFD00314DEB /* BlackRadiusTextField.swift */; };
+		92CA18DF28B12DAD00314DEB /* CodeNetflixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA18DE28B12DAD00314DEB /* CodeNetflixViewController.swift */; };
+		92CA18E128B1E6FA00314DEB /* CodeNetflixLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA18E028B1E6FA00314DEB /* CodeNetflixLoginViewController.swift */; };
+		92CA18E328B223EA00314DEB /* CodeSelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CA18E228B223EA00314DEB /* CodeSelectImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +96,9 @@
 		92CA18D628AF169E00314DEB /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		92CA18D828AF179B00314DEB /* WriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteView.swift; sourceTree = "<group>"; };
 		92CA18DB28AF2CFD00314DEB /* BlackRadiusTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackRadiusTextField.swift; sourceTree = "<group>"; };
+		92CA18DE28B12DAD00314DEB /* CodeNetflixViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeNetflixViewController.swift; sourceTree = "<group>"; };
+		92CA18E028B1E6FA00314DEB /* CodeNetflixLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeNetflixLoginViewController.swift; sourceTree = "<group>"; };
+		92CA18E228B223EA00314DEB /* CodeSelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeSelectImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -173,6 +179,9 @@
 				92CA18C528AC826000314DEB /* CodeSnapViewController.swift */,
 				92CA18C728AC8C2B00314DEB /* CodeSnap2ViewController.swift */,
 				92CA18C928AD2DC400314DEB /* CodeKakaoViewController.swift */,
+				92CA18DE28B12DAD00314DEB /* CodeNetflixViewController.swift */,
+				92CA18E028B1E6FA00314DEB /* CodeNetflixLoginViewController.swift */,
+				92CA18E228B223EA00314DEB /* CodeSelectImageViewController.swift */,
 			);
 			path = CodeBase;
 			sourceTree = "<group>";
@@ -334,6 +343,8 @@
 				92B5FB4528AB40F60073D5AC /* SecondViewController.swift in Sources */,
 				92CA18DC28AF2CFD00314DEB /* BlackRadiusTextField.swift in Sources */,
 				92B5FB4728AB41140073D5AC /* ThirdViewController.swift in Sources */,
+				92CA18E328B223EA00314DEB /* CodeSelectImageViewController.swift in Sources */,
+				92CA18E128B1E6FA00314DEB /* CodeNetflixLoginViewController.swift in Sources */,
 				92CA18CA28AD2DC400314DEB /* CodeKakaoViewController.swift in Sources */,
 				92CA18C628AC826000314DEB /* CodeSnapViewController.swift in Sources */,
 				92B5FB4928AB419E0073D5AC /* WalkThroughViewController.swift in Sources */,
@@ -341,6 +352,7 @@
 				92B5FB4328AB3AF20073D5AC /* FirstViewController.swift in Sources */,
 				92CA18C828AC8C2B00314DEB /* CodeSnap2ViewController.swift in Sources */,
 				92CA18D528AF144800314DEB /* WriteViewController.swift in Sources */,
+				92CA18DF28B12DAD00314DEB /* CodeNetflixViewController.swift in Sources */,
 				92B5FB9128ABF3950073D5AC /* IntroViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -20,10 +20,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationUI()
         configure()
         nameButton.addTarget(self, action: #selector(nameButtonClicked), for: .touchUpInside)
         NotificationCenter.default.addObserver(self, selector: #selector(saveButtonNotificationObserver), name: NSNotification.Name("saveButtonNotification"), object: nil)
+        
     }
     
     @objc func saveButtonNotificationObserver(notification: NSNotification){
@@ -46,6 +47,10 @@ class ViewController: UIViewController {
         present(vc, animated: true)
     }
 
+    func navigationUI(){
+        let vc = CodeSelectImageViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
     func configure() {
         view.addSubview(nameButton)
@@ -56,11 +61,11 @@ class ViewController: UIViewController {
         }
     }
     override func viewDidAppear(_ animated: Bool) {
-
-        let vc = CodeKakaoViewController()
+        
+        let vc = CodeSnapViewController()
+//        navigationController?.pushViewController(vc, animated: true)
         vc.modalPresentationStyle = .fullScreen
         self.present(vc, animated: true)
-
 
     }
 

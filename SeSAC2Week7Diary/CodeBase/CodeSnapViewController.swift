@@ -10,11 +10,27 @@ import SnapKit
 
 class CodeSnapViewController: UIViewController {
 
+    let responseImage = UIImage()
+    
     let photoImageView: UIImageView = {
         let view = UIImageView()
         view.backgroundColor = .lightGray
+        view.image = UIImage(systemName: "photo")
+        view.tintColor = .black
         view.contentMode = .scaleAspectFill
         return view
+    }()
+    
+    let btn_search : UIButton = {
+        let btn = UIButton()
+        btn.setImage(UIImage(systemName: "plus"), for: .normal)
+//        btn.layer.cornerRadius = 40
+        btn.layer.borderWidth = 1
+        btn.layer.borderColor = UIColor.white.cgColor
+        btn.layer.cornerRadius = 9
+        btn.backgroundColor = .darkGray
+        btn.tintColor = .white
+        return btn
     }()
     
     let titleTextField: UITextField = {
@@ -57,11 +73,23 @@ class CodeSnapViewController: UIViewController {
         super.viewDidLoad()
         print(#function, "CodeSnapViewController")
         configureUI()
+        view.backgroundColor = .white
+        btn_search.addTarget(self, action: #selector(searchImage), for: .touchUpInside)
+    }
+    
+    @objc func searchImage() {
+        
+        let vc = CodeSelectImageViewController()
+//        let nav = UINavigationController(rootViewController: vc)
+//        nav.present(vc, animated: true)
+//        self.modalPresentationStyle = .fullScreen
+        vc.modalPresentationStyle = .fullScreen
+        self.present(vc, animated: true)
     }
     
     func configureUI() {
         
-        [photoImageView, titleTextField, dateTextField, contentTextView].forEach {
+        [photoImageView, btn_search, titleTextField, dateTextField, contentTextView].forEach {
             view.addSubview($0)
         }
         
@@ -70,6 +98,11 @@ class CodeSnapViewController: UIViewController {
             make.leadingMargin.equalTo(20)
             make.trailingMargin.equalTo(-20)
             make.height.equalTo(view).multipliedBy(0.3)
+        }
+        
+        btn_search.snp.makeConstraints { make in
+            make.trailing.equalTo(photoImageView.snp.trailing).offset(-20)
+            make.bottom.equalTo(photoImageView.snp.bottom).offset(-20)
         }
         
         titleTextField.snp.makeConstraints { make in

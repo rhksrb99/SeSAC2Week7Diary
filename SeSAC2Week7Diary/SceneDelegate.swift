@@ -19,11 +19,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 //
 //
 //        if UserDefaults.standard.bool(forKey: "First") {
-//            let sb = UIStoryboard(name: "WalkThrough", bundle: nil)
-//            let vc = sb.instantiateViewController(withIdentifier: "WalkThroughViewController") as! WalkThroughViewController
-//            let nav = UINavigationController(rootViewController: vc)
+//        let sb = UIStoryboard(name: "Main", bundle: nil)
+//        let vc = sb.instantiateViewController(withIdentifier: "CodeSnapViewController") as! CodeSnapViewController
+//        let nav = UINavigationController(rootViewController: vc)
 //
-//            window?.rootViewController = nav
+//        window?.rootViewController = nav
 //            print(#function)
 //            print("true")
 //        }else {
